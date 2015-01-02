@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS unit tests</title>
+  <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.16.0.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="//code.jquery.com/qunit/qunit-1.16.0.js"></script>
+  <script>
+
+      function create_multiplier(factor) {
+          return (function(x) {
+              return x * factor;
+          });
+      };
+
+      QUnit.test( "hello test", function( assert ) {
+          assert.ok( 1 == "1", "Passed!" );
+      });
+
+      QUnit.test( "mult 2", function( assert ) {
+          var m2 = create_multiplier(2);
+          assert.ok( m2(5) == 10, "Passed!" );
+      });
+
+      QUnit.test( "mult 3", function( assert ) {
+          var m3 = create_multiplier(3);
+          assert.ok( m3(5) == 15, "Passed!" );
+      });
+
+  </script>
+</body>
+</html>
