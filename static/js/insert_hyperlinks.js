@@ -21,10 +21,10 @@ var links = [
 ];
 
 function getColor(index) {
-    var r = 100 + (index*50) % 256;
-    var g = (index*120) % 256;
-    var b = (index*20) % 256;
-    return { backgroundColor: 'rgb('+r+','+g+','+b+')', textColor: (r+g+b > 256*3/2) ? 'black' : 'white' }
+    var b = 128 + Math.floor(Math.sin(index*0.6)*64);
+    var g = 128 + Math.floor(Math.cos(index*0.6+1.0)*64);
+    var r = 0;
+    return { backgroundColor: 'rgb('+r+','+g+','+b+')', textColor: (Math.max(r,g,b) > 128) ? 'black' : 'white' }
 }
 
 function assignStyleToLink(index) {
