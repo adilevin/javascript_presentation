@@ -1,19 +1,11 @@
 from flask import Flask, render_template
+import datetime
 
 app = Flask(__name__)
 
-class Context:
-
-    def __init__(self):
-        pass
-
-    def get_time(self):
-        import datetime
-        return str(datetime.datetime.now())
-
 @app.route('/time')
 def get_time():
-    return Context().get_time()
+    return str(datetime.datetime.now())
 
 @app.route('/')
 def root():
@@ -41,7 +33,7 @@ def serve_html(path):
 
 @app.route('/dynamic')
 def dynamic_page():
-    return render_template('cur_time.html',context=Context())
+    return render_template('cur_time.html',cur_time=str(datetime.datetime.now()))
 
 if __name__ == '__main__':
     app.run()

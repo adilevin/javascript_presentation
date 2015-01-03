@@ -42,3 +42,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 .idea/*
+node/node_modules/.bin/static
+node/node_modules/.bin/static.cmd
