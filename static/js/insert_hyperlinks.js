@@ -20,19 +20,20 @@ var links = [
     {title:'ES6',url:'http://sankhs.com/jschannel-es6/#/'}
 ];
 
-function assignStyleToLink(index) {
+function getColor(index) {
     var r = 100 + (index*50) % 256;
     var g = (index*120) % 256;
     var b = (index*20) % 256;
+    return { backgroundColor: 'rgb('+r+','+g+','+b+')', textColor: (r+g+b > 256*3/2) ? 'black' : 'white' }
+}
+
+function assignStyleToLink(index) {
+    var color = getColor(index);
     var elem = $("#link" + index)
-    elem.css('background-color','rgb('+r+','+g+','+b+')').
-         css('color',(r+g+b > 256*3/2) ? 'black' : 'white').
-         mouseover(function() {
-            elem.stop().fadeTo("fast",1.0);
-         }).
-         mouseout(function() {
-            elem.stop().fadeTo("slow",0.25);
-         })
+    elem.css('background-color',color.backgroundColor).
+         css('color',color.textColor).
+         mouseover(function() { elem.stop().fadeTo("fast",1.0); }).
+         mouseout(function() { elem.stop().fadeTo("slow",0.25); })
 }
 
 $(document).ready(function(){
