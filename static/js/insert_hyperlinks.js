@@ -4,6 +4,7 @@
 
 var links = [
     {url:'http://missictteacher.com/ocr-computing/tim-berners-lee/',class:'Tim-Berners-Lee'},
+	{title:'WWW',url:'http://www.w3.org/History/19921103-hypertext/hypertext/WWW/TheProject.html'},
     {title:'Popularity',url:'https://www.openhub.net/languages/compare?measure=contributors&percent=true&l0=javascript&l1=python&l2=java&l3=csharp&l4=cpp&l5=-1&commit=Update'},
     {title:'Static',url:'html/static_content.html'},
     {title:'Dynamic',url:'dynamic'},
@@ -13,7 +14,7 @@ var links = [
     {title:'Mixins',url:'http://javascriptweblog.wordpress.com/2011/05/31/a-fresh-look-at-javascript-mixins/'},
     {url:'http://jquery.com/',class:'JQuery'},
     {title:'JSLint',url:'http://www.jslint.com/'},
-    {title:'QUnit',url:'html/qunit_tests.html'},
+    {title:'Jasmine',url:'html/jasmine_tests.html'},
     {title:'Typescript',url:'http://www.typescriptlang.org/Playground'},
     {title:'Coffeescript',url:'http://coffeescript.org/'},
     {title:'Dart',url:'https://www.dartlang.org/'},
@@ -21,10 +22,10 @@ var links = [
 ];
 
 function getColor(index) {
-    var b = 128 + Math.floor(Math.sin(index*0.6)*64);
-    var g = 128 + Math.floor(Math.cos(index*0.6+1.0)*64);
-    var r = 0;
-    return { backgroundColor: 'rgb('+r+','+g+','+b+')', textColor: (Math.max(r,g,b) > 128) ? 'black' : 'white' }
+    var b = 128 + Math.floor(Math.sin(index*0.6)*128);
+    var g = 0;
+    var r = 128 + Math.floor(Math.cos(index*0.6)*128);
+    return { backgroundColor: 'rgb('+r+','+g+','+b+')', textColor: 'white' }
 }
 
 function assignStyleToLink(index) {
