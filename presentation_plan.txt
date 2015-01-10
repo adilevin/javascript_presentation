@@ -1,0 +1,29 @@
+Introduction -
+    The whole software industry is evolving rapidly. New programming languages, tools, libraries, frameworks, infrastructure and service provides.
+    One of the things that are growing more and more popular is Javascript.
+    As developers, it is important for your career that you be aware of this trend, and be able to work in Javascript.
+
+Web. vs Internet -
+
+    The internet tries to answer the question: How do we connect all of the computers in the world? It is a network or networks.
+    The web uses the internet and it tries to answer the question: How do we create a global information space, where people can easily access information
+    and publish information, and how to represent associations between pieces of information?
+
+    TCP/IP, IP Addesses, DNS, Cables, Telephone lines.
+     E-mail, FTP, Skype
+
+    Web has to do with URLs, HTTP, HTML, and web browsers
+
+Static web pages
+Dynamic web pages
+Ajax
+Web application
+Javascript demo
+Javascript history
+The DOM
+Javascript uses - Browser + Server
+Language features - w3c, then object-oriented
+Debugging and profiling with Chrome
+JQuery
+JSLint
+QUnit
