@@ -17,7 +17,6 @@ var links = [
     {title:'Mixins',url:'http://javascriptweblog.wordpress.com/2011/05/31/a-fresh-look-at-javascript-mixins/'},
     {url:'http://jquery.com/',class:'JQuery'},
     {title:'Node.js',url:'http://nodejs.org/'},
-    {title:'JSLint',url:'http://www.jslint.com/'},
     {title:'Jasmine',url:'html/jasmine_tests.html'},
     {title:'Typescript',url:'http://www.typescriptlang.org/Playground'},
     {title:'Coffeescript',url:'http://coffeescript.org/'},

@@ -9,7 +9,12 @@ Preparations:
 2. Motivation for why JS is important - and show the JS demo
 3. What is the web (!=internet) and how it evolved - Tim Berner Lee's vision
 4. Static web pages, Dynamic web pages, Ajax
-
+5. W3schools - basic Javascript and how it runs, the DOM
+6. Demonstration of changing background of the presentation with seamless repeating background of clouds
+7. Single-threaded task-queue execution model
+8. Objects: Object literals, class using function and new operator, prototype inheritance
+9. Mixins.
+9.
 
 
 Web. vs Internet -
@@ -23,15 +28,7 @@ Web. vs Internet -
 
     Web has to do with URLs, HTTP, HTML, and web browsers
 
-Static web pages
-Dynamic web pages
-Ajax
-Web application
-Javascript demo
-Javascript history
-The DOM
 Javascript uses - Browser + Server
-Language features - w3c, then object-oriented
 Debugging and profiling with Chrome
 JQuery
 JSLint
