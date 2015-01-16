@@ -1,7 +1,16 @@
-Introduction -
-    The whole software industry is evolving rapidly. New programming languages, tools, libraries, frameworks, infrastructure and service provides.
-    One of the things that are growing more and more popular is Javascript.
-    As developers, it is important for your career that you be aware of this trend, and be able to work in Javascript.
+Preparations:
+
+    - Open web_viewer_3d project in another PyCharm window
+    - Start ortho_viewer.py server
+    - Open javascript_persentation project in PyCharm
+    - Start "run_node.bat"
+
+1. Story about how I started the 3D viewer
+2. Motivation for why JS is important - and show the JS demo
+3. What is the web (!=internet) and how it evolved - Tim Berner Lee's vision
+4. Static web pages, Dynamic web pages, Ajax
+
+
 
 Web. vs Internet -
 
