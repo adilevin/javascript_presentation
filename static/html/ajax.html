@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.ajax({url:"../time",success:function(result){
-      $("#ajax_result").html("AJAX call returned: " + result);
-    }});
-  });
-});
-</script>
 </head>
 <body>
 
 <div><h2 id="ajax_result">Hit button to get current time</h2></div>
 <button>Use AJAX to get current time</button>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+      $.ajax({
+          url: "../time",
+          success: function(result) {
+            $("#ajax_result").html("AJAX call returned: " + result);
+          }
+      });
+    });
+});
+
+</script>
 
 </body>
 </html>
